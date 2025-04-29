@@ -9,7 +9,11 @@
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.supratik7.modernchat",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -17,19 +21,16 @@
         "backgroundColor": "#ffffff"
       },
       "package": "com.supratik7.modernchat",
-      "intentFilters":[
+      "intentFilters": [
         {
           "action": "VIEW",
           "data": [
             {
-              "scheme": "https", 
+              "scheme": "https",
               "host": "careful-starling-46.clerk.accounts.dev"
             }
           ],
-          "category": [
-            "BROWSABLE",
-            "DEFAULT"
-          ]
+          "category": ["BROWSABLE", "DEFAULT"]
         }
       ]
     },
@@ -54,6 +55,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "48107306-26cc-44d5-b835-591127134f11"
+      }
     }
   }
 }
